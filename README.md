@@ -31,3 +31,21 @@ Server runs on `http://localhost:3000`
 ### Endpoints
 
 **Get a user:**
+GET http://localhost:3000/api/user/1
+
+Returns:
+```json
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "name": "User Name",
+    "email": "user@example.com",
+    "company": "Company Name",
+    "fetched_at": "2025-03-10T14:32:45.123Z"
+  }
+}
+```
+
+**Get user's posts:**
+
